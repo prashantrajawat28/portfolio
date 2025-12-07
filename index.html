@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prashant Rajawat — Full Stack Developer (MERN) portfolio. Projects, experience, skills, and contact." />
+  <meta name="theme-color" content="#06110c" />
+  <title>Prashant Rajawat - FullStack Engineer Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-grain" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sidebar Nav -->
+  <aside class="sidebar-nav" aria-label="Primary navigation">
+    <a class="nav-item" href="#hero" title="Home" aria-label="Home">
+      <i class="fas fa-home" aria-hidden="true"></i><span class="nav-label">Home</span>
+    </a>
+    <a class="nav-item" href="#about" title="About" aria-label="About">
+      <i class="fas fa-user" aria-hidden="true"></i><span class="nav-label">About</span>
+    </a>
+    <a class="nav-item" href="#projects" title="Projects" aria-label="Projects">
+      <i class="fas fa-folder-open" aria-hidden="true"></i><span class="nav-label">Projects</span>
+    </a>
+    <a class="nav-item" href="#experience" title="Experience" aria-label="Experience">
+      <i class="fas fa-briefcase" aria-hidden="true"></i><span class="nav-label">Experience</span>
+    </a>
+    <a class="nav-item" href="#contact" title="Contact" aria-label="Contact">
+      <i class="fas fa-envelope" aria-hidden="true"></i><span class="nav-label">Contact</span>
+    </a>
+  </aside>
+
+  <main id="main" class="portfolio-content">
+    <!-- HERO -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-text tilt" data-tilt data-tilt-max="10">
+        <p class="greeting">Hello, I am</p>
+        <h1>Prashant Rajawat</h1>
+
+        <p class="role-title">
+          Full Stack &amp; AI Engineer — I build scalable web apps, robust backend APIs, and real-time AI automation (Twilio, WebSockets, LLMs).
+          <span class="role-sub">
+            React • Node/Express • FastAPI • PostgreSQL/MongoDB • STT→LLM→TTS
+          </span>
+        </p>
+
+        <div class="social-links">
+          <a href="assets/PrashantRajawat_resume.pdf"
+             class="btn btn-outline-primary js-resume"
+             target="_blank"
+             rel="noreferrer">
+            Resume <i class="bi bi-download ms-6" aria-hidden="true"></i>
+          </a>
+
+          <button
+            type="button"
+            class="btn-primary btn-hire js-hire-open"
+            aria-haspopup="dialog"
+            aria-controls="hireModal"
+          >
+            Hire Me <i class="bi bi-briefcase ms-6" aria-hidden="true"></i>
+          </button>
+
+          <a href="https://www.linkedin.com/in/prashant-rajawat-096346275/" class="social-icon linkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/prashantrajawat28" class="social-icon github" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <i class="bi bi-github" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:prashantrajawat1628@gmail.com" class="social-icon mail" aria-label="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="profile-circle tilt" data-tilt data-tilt-max="14" aria-label="Profile photo">
+          <img src="assets/profile-photo.png" alt="Prashant Rajawat profile photo" />
+          <i class="fas fa-play play-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="statistics-info">
+        <div class="bg-white shadow rounded-pill py-16 px-16 d-block d-md-flex align-items-center g-3 justify-content-around stats-row">
+          <div class="d-flex align-items-center flex-grow-1 justify-content-center stat-block">
+            <img src="assets/Fullstack.gif" alt="Full stack icon" class="stat-icon">
+            <div>
+              <span class="number">2</span>
+              <p class="stat-text">FullStack Project</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center flex-grow-1 justify-content-center stat-block">
+            <img src="assets/webdevelopment.gif" alt="Web dev icon" class="stat-icon">
+            <div>
+              <span class="number">3</span>
+              <p class="stat-text">Web Development Project</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center flex-grow-1 justify-content-center stat-block">
+            <img src="assets/gen-ai.png" alt="GenAI icon" class="stat-icon">
+            <div>
+              <span class="number">1</span>
+              <p class="stat-text">GenAI Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+
+      <div class="about-text-content tilt" data-tilt data-tilt-max="8">
+        <p style="font-weight:700; font-size:clamp(22px, 3vw, 36px); line-height:1.2;">
+          👋 Hello, I am Prashant Rajawat
+        </p>
+
+        <br><br>
+
+        <p style="font-weight:700; font-size:20px; line-height:1.3; margin-top:6px;">
+          Full Stack &amp; AI Engineer.
+        </p>
+
+        <hr>
+
+        <div class="about-copy">
+          I build scalable web applications, backend APIs, and real-time AI automation systems. I have hands-on experience working in fast-paced startup environments, taking full ownership of core features — from architecture and development to testing and deployment.
+          <br><br>
+          My work spans full stack engineering, backend systems, data-driven workflows, and AI-powered automation using Twilio, WebSockets, and LLM integrations. I love solving complex problems, designing clean architectures, and turning ideas into production-ready solutions.. 🚀
+        </div>
+
+        <hr>
+
+        <p style="font-weight:700; font-size:clamp(16px, 2vw, 22px); line-height:1.3; margin-top:6px;">🚀 What I Do</p>
+
+        <hr>
+
+        <ul>
+          <li>Full Stack Development (React.js, Node.js, Express.js, FastAPI)</li>
+          <li>Backend Architecture & API Engineering</li>
+          <li>AI Voice Automation (STT → LLM → TTS Pipelines)</li>
+          <li>Database Design (PostgreSQL, MongoDB, SQL/NoSQL)</li>
+          <li>Authentication, Authorization, Secure Sessions</li>
+          <li>Integration of third-party services (Twilio, Razorpay)</li>
+          <li>Real-time communication with WebSockets</li>
+          <li>Building scalable, maintainable systems</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+      <h2 class="section-title">🔑 Key <span class="highlight">Skills</span></h2>
+
+      <div class="skills-groups">
+        <div class="skill-group tilt" data-tilt data-tilt-max="6">
+          <h3 class="skill-group-title">Programming</h3>
+          <div class="skill-pills" role="list" aria-label="Programming skills">
+            <button type="button" class="skill-pill" role="listitem">Python</button>
+            <button type="button" class="skill-pill" role="listitem">JavaScript</button>
+            <button type="button" class="skill-pill" role="listitem">C++</button>
+          </div>
+        </div>
+
+        <div class="skill-group tilt" data-tilt data-tilt-max="6">
+          <h3 class="skill-group-title">Web & Backend</h3>
+          <div class="skill-pills" role="list" aria-label="Web and Backend skills">
+            <button type="button" class="skill-pill" role="listitem">Node.js</button>
+            <button type="button" class="skill-pill" role="listitem">Express.js</button>
+            <button type="button" class="skill-pill" role="listitem">FastAPI</button>
+            <button type="button" class="skill-pill" role="listitem">REST APIs</button>
+            <button type="button" class="skill-pill" role="listitem">WebSockets</button>
+          </div>
+        </div>
+
+        <div class="skill-group tilt" data-tilt data-tilt-max="6">
+          <h3 class="skill-group-title">Frontend</h3>
+          <div class="skill-pills" role="list" aria-label="Frontend skills">
+            <button type="button" class="skill-pill" role="listitem">React.js</button>
+            <button type="button" class="skill-pill" role="listitem">HTML</button>
+            <button type="button" class="skill-pill" role="listitem">CSS</button>
+          </div>
+        </div>
+
+        <div class="skill-group tilt" data-tilt data-tilt-max="6">
+          <h3 class="skill-group-title">Databases</h3>
+          <div class="skill-pills" role="list" aria-label="Database skills">
+            <button type="button" class="skill-pill" role="listitem">PostgreSQL</button>
+            <button type="button" class="skill-pill" role="listitem">MongoDB</button>
+            <button type="button" class="skill-pill" role="listitem">SQL/NoSQL</button>
+          </div>
+        </div>
+
+        <div class="skill-group tilt" data-tilt data-tilt-max="6">
+          <h3 class="skill-group-title">AI & Automation</h3>
+          <div class="skill-pills" role="list" aria-label="AI and Automation skills">
+            <button type="button" class="skill-pill" role="listitem">Twilio Voice APIs</button>
+            <button type="button" class="skill-pill" role="listitem">STT / TTS Pipelines</button>
+            <button type="button" class="skill-pill" role="listitem">LLM Integrations</button>
+            <button type="button" class="skill-pill" role="listitem">Prompt Engineering</button>
+            <button type="button" class="skill-pill" role="listitem">Real-time AI Streaming</button>
+          </div>
+        </div>
+
+        <div class="skill-group tilt" data-tilt data-tilt-max="6">
+          <h3 class="skill-group-title">Tools & DevOps</h3>
+          <div class="skill-pills" role="list" aria-label="Tools and DevOps skills">
+            <button type="button" class="skill-pill" role="listitem">Git</button>
+            <button type="button" class="skill-pill" role="listitem">Docker</button>
+            <button type="button" class="skill-pill" role="listitem">Postman</button>
+            <button type="button" class="skill-pill" role="listitem">System Design</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience-section">
+      <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+
+      <div class="job-entry tilt" data-tilt data-tilt-max="8">
+        <h3>Mina Tech Labs Pvt. Ltd | AI Data Science Engineer | October 2025 – Present</h3>
+        <ul>
+          <li>Working in a dynamic startup environment with full ownership of feature development from planning to deployment.</li>
+          <li>Contributing across backend development, frontend integration, API engineering, and overall product improvement.</li>
+          <li>Actively involved in enhancing core modules:
+            <ul>
+              <li>Authentication & secure session management</li>
+              <li>Role-based access control</li>
+              <li>Application tracking & workflow automation</li>
+              <li>Candidate–recruiter interactions</li>
+              <li>User profile creation & optimization</li>
+            </ul>
+          </li>
+          <li>Architecting database schema strategy: entities, relationships, indexing, constraints.</li>
+          <li>Building maintainable systems aligned with clean architecture and best practices.</li>
+          <li>High-ownership delivery in a small team with rapid iterations.</li>
+        </ul>
+
+        <p class="job-skills">
+          <strong>Skills:</strong> Python, PostgreSQL, FastAPI, AWS, React.js, Node.js, REST APIs, Git, Docker, System Design.
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="job-entry tilt" data-tilt data-tilt-max="8">
+        <h3>REGex Software Services | Web Developer | May 2023 – July 2023</h3>
+        <ul>
+          <li>Integrated REST APIs and optimized backend logic for smoother data flow and faster response.</li>
+          <li>Designed production-ready modules with senior developers for better reliability and UX.</li>
+          <li>Optimized queries and workflows to reduce load times.</li>
+          <li>Collaborated with cross-functional teams to define requirements and solutions.</li>
+        </ul>
+        <p class="job-skills">
+          <strong>Skills:</strong> Node.js, Express.js, HTML, CSS, JavaScript, REST APIs, SQL/NoSQL, Debugging, Optimization, Git.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+      <div class="projects-grid">
+        <div class="project-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/project-1.png" alt="StudyNotion project screenshot">
+          <div class="project-content">
+            <h3>StudyNotion-Edtech Platform</h3>
+            <p class="domain">Domain/Function: <strong>EdTech</strong> / <strong>E-Learning Platform Development</strong></p>
+            <p class="overview">Full-stack EdTech web app where students purchase & learn courses while instructors create/manage content.</p>
+            <a href="#" class="btn-primary js-open-project" data-project="project1">See My Work</a>
+          </div>
+        </div>
+
+        <div class="project-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/project-2.png" alt="CRUD project screenshot">
+          <div class="project-content">
+            <h3>Backend API & CRUD Operations</h3>
+            <p class="domain">Domain/Function: <strong>Web Development</strong> / <strong>Backend API & CRUD</strong></p>
+            <p class="overview">Express.js CRUD web app demonstrating REST API design, validation, and backend ↔ frontend flow.</p>
+            <a href="#" class="btn-primary js-open-project" data-project="project2">See My Work</a>
+          </div>
+        </div>
+
+        <div class="project-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/smartreg-2.jpeg" alt="SmartCallReg project screenshot">
+          <div class="project-content">
+            <h3>SmartCallReg</h3>
+            <p class="domain">Domain/Function: <strong>AI Voice Automation</strong> / <strong>Real-Time Voice Assistant</strong></p>
+            <p class="overview">Real-time AI voice assistant using Twilio + FastAPI + WebSockets with STT → LLM → TTS pipeline.</p>
+            <a href="#" class="btn-primary js-open-project" data-project="project3">See My Work</a>
+          </div>
+        </div>
+
+        <div class="project-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/ui-travel-1.png" alt="Travel landing page UI screenshot">
+          <div class="project-content">
+            <h3>Travel Landing Page UI</h3>
+            <span class="proj-badge proj-badge--offline">UI Preview • Not Hosted</span>
+            <p class="domain">Domain/Function: <strong>UI/UX</strong> / <strong>Travel & Tourism Landing Page</strong></p>
+            <p class="overview">Modern landing page UI with hero banner, CTA blocks, clean layout, and responsive design.</p>
+            <a href="#" class="btn-primary js-open-project" data-project="project4">See My Work</a>
+          </div>
+        </div>
+
+        <div class="project-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/ui-spotify-1.png" alt="Spotify web player UI clone screenshot">
+          <div class="project-content">
+            <h3>Spotify Web Player UI Clone</h3>
+            <span class="proj-badge proj-badge--offline">UI Preview • Not Hosted</span>
+            <p class="domain">Domain/Function: <strong>UI Clone</strong> / <strong>Music Streaming Dashboard</strong></p>
+            <p class="overview">Spotify-inspired dashboard UI with sidebar, cards grid, and player layout styling.</p>
+            <a href="#" class="btn-primary js-open-project" data-project="project5">See My Work</a>
+          </div>
+        </div>
+
+        <div class="project-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/ui-netflix-1.png" alt="Netflix landing page UI clone screenshot">
+          <div class="project-content">
+            <h3>Netflix Landing Page UI Clone</h3>
+            <span class="proj-badge proj-badge--offline">UI Preview • Not Hosted</span>
+            <p class="domain">Domain/Function: <strong>UI Clone</strong> / <strong>OTT Landing Page</strong></p>
+            <p class="overview">Netflix-style hero + CTA layout with feature sections and responsive spacing.</p>
+            <a href="#" class="btn-primary js-open-project" data-project="project6">See My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section certificates-section">
+      <h2 class="section-title">Awards & <span class="highlight">Certificate</span></h2>
+
+      <div class="certificates-grid">
+        <div class="certificate-card tilt" data-tilt data-tilt-max="10">
+          <img src="assets/certificate-1.png" alt="MERN Stack Development certificate">
+          <p>MERN Stack Development</p>
+        </div>
+
+        <div class="certificate-card">
+          <img src="assets/certificate-2.png" alt="SQL Certificate">
+          <p>Virtual internship Web Development</p>
+        </div>
+
+        <!-- Keep for future
+        <div class="certificate-card">
+          <img src="assets/cert-sql.jpg" alt="SQL Certificate">
+          <p>SQL for Data Science</p>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- CONTACT + FOOTER -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-box contact-banner">
+        <h2 class="contact-title">Contact <span class="highlight">Me</span></h2>
+
+        <div class="contact-details contact-grid">
+          <a class="contact-card contact-link tilt" data-tilt data-tilt-max="8"
+             href="mailto:prashantrajawat1628@gmail.com" data-type="email">
+            <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+            <h4>Email</h4>
+            <p>prashantrajawat1628@gmail.com</p>
+          </a>
+
+          <a class="contact-card contact-link tilt" data-tilt data-tilt-max="8"
+             href="https://github.com/prashantrajawat28" target="_blank" rel="noreferrer" data-type="github">
+            <span class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+            <h4>Github</h4>
+            <p>github.com/prashantrajawat28</p>
+          </a>
+
+          <a class="contact-card contact-link tilt" data-tilt data-tilt-max="8"
+             href="https://www.linkedin.com/in/prashant-rajawat-096346275" target="_blank" rel="noreferrer" data-type="linkedin">
+            <span class="contact-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+            <h4>Linkedin</h4>
+            <p>linkedin.com/in/prashant-rajawat-096346275</p>
+          </a>
+
+          <a class="contact-card contact-link tilt" data-tilt data-tilt-max="8"
+             href="tel:+917690052088" data-type="call">
+            <span class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+            <h4>Call</h4>
+            <p>+91 7690052088</p>
+          </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-left">
+            <h2 class="footer-name">Prashant Rajawat</h2>
+            <p class="footer-role">FullStack Engineer</p>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-resume-label">Download Resume</p>
+            <a href="assets/PrashantRajawat_resume.pdf"
+               class="footer-resume-btn js-resume"
+               target="_blank"
+               rel="noreferrer">
+              Resume <i class="bi bi-download ms-6" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="copyright-bar">
+          <p>All Rights Reserved</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- =========================
+       Project Details Modal (CLEAN + SLIDER)
+  ========================= -->
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-close-modal></div>
+
+    <div class="project-modal__panel" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+      <button class="project-modal__close" type="button" data-close-modal aria-label="Close">&times;</button>
+
+      <div class="project-modal__content">
+        <h2 class="project-modal__title" id="pmTitle">Project Title</h2>
+
+        <div class="project-modal__top">
+          <div class="project-modal__buttons">
+            <a class="pm-btn pm-btn--github" id="pmGithub" href="#" target="_blank" rel="noreferrer">
+              <i class="bi bi-github" aria-hidden="true"></i>
+              <span>View Project on GitHUB</span>
+            </a>
+
+            <a class="pm-btn pm-btn--live" id="pmLive" href="#" target="_blank" rel="noreferrer">
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+              <span>View Project Live</span>
+            </a>
+          </div>
+
+          <div class="project-modal__media">
+            <div class="project-modal__repoBox">
+              <div class="pm-slider" id="pmViewport" aria-label="Project previews">
+                <div class="pm-slider__track" id="pmTrack"></div>
+
+                <button type="button" class="pm-slider__arrow pm-slider__arrow--prev" id="pmPrev" aria-label="Previous image">&#8249;</button>
+                <button type="button" class="pm-slider__arrow pm-slider__arrow--next" id="pmNext" aria-label="Next image">&#8250;</button>
+
+                <div class="pm-slider__dots" id="pmDots" aria-label="Choose image"></div>
+              </div>
+            </div>
+            <p class="project-modal__repoLabel">Project Preview</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3 class="project-modal__subtitle">Project Details</h3>
+        <p class="project-modal__desc" id="pmDesc"></p>
+
+        <div class="project-modal__features">
+          <p class="project-modal__featuresTitle">📌 Features</p>
+          <ul id="pmFeatures"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+     Hire Me Modal (Professional)
+  ========================= -->
+  <div class="hire-modal" id="hireModal" aria-hidden="true">
+    <div class="hire-modal__backdrop" data-close-hire></div>
+
+    <div class="hire-modal__panel" role="dialog" aria-modal="true" aria-labelledby="hmTitle" aria-describedby="hmDesc">
+      <button class="hire-modal__close" type="button" data-close-hire aria-label="Close">&times;</button>
+
+      <div class="hire-modal__content">
+        <p class="hire-modal__badge">✅ Available for Internship / Full-time</p>
+        <h2 class="hire-modal__title" id="hmTitle">Let’s work together</h2>
+        <p class="hire-modal__desc" id="hmDesc">
+          Choose the fastest way to reach me — I’ll respond quickly.
+        </p>
+
+        <div class="hire-modal__grid">
+          <a class="hm-btn hm-btn--email" id="hmEmail" href="#" target="_blank" rel="noreferrer">
+            <span class="hm-btn__icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+            <span class="hm-btn__text">
+              <strong>Email Me</strong>
+              <small>Pre-filled message</small>
+            </span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <a class="hm-btn hm-btn--wa" id="hmWhatsApp" href="#" target="_blank" rel="noreferrer">
+            <span class="hm-btn__icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+            <span class="hm-btn__text">
+              <strong>WhatsApp</strong>
+              <small>Quick chat</small>
+            </span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <a class="hm-btn hm-btn--call" id="hmCalendly" href="#" target="_blank" rel="noreferrer">
+            <span class="hm-btn__icon"><i class="bi bi-calendar2-week" aria-hidden="true"></i></span>
+            <span class="hm-btn__text">
+              <strong>Call Me</strong>
+              <small>Direct phone call</small>
+            </span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <a class="hm-btn hm-btn--resume js-resume" href="assets/PrashantRajawat_resume.pdf" target="_blank" rel="noreferrer">
+            <span class="hm-btn__icon"><i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i></span>
+            <span class="hm-btn__text">
+              <strong>Download Resume</strong>
+              <small>PDF (quick access)</small>
+            </span>
+            <i class="bi bi-download" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <p class="hire-modal__note">
+          Prefer email? Use: <strong>prashantrajawat1628@gmail.com</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
