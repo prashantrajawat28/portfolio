@@ -400,17 +400,25 @@ Thanks,
     document.body.style.overflow = "hidden";
 
     // Email -> Gmail compose (your later intended behavior)
-    if (hmEmail) {
-      const gmailUrl =
-        "https://mail.google.com/mail/?view=cm&fs=1" +
-        `&to=${encodeURIComponent(EMAIL)}` +
-        `&su=${encodeURIComponent(SUBJECT)}` +
-        `&body=${encodeURIComponent(BODY)}`;
+   // Email button: Desktop -> Gmail compose, Mobile -> mailto (works everywhere)
+if (hmEmail) {
+  const gmailUrl =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    `&to=${encodeURIComponent(EMAIL)}` +
+    `&su=${encodeURIComponent(SUBJECT)}` +
+    `&body=${encodeURIComponent(BODY)}`;
 
-      hmEmail.href = gmailUrl;
-      hmEmail.target = "_blank";
-      hmEmail.rel = "noopener noreferrer";
-    }
+  const mailtoUrl =
+    `mailto:${EMAIL}` +
+    `?subject=${encodeURIComponent(SUBJECT)}` +
+    `&body=${encodeURIComponent(BODY)}`;
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  hmEmail.href = isMobile ? mailtoUrl : gmailUrl;
+  hmEmail.target = isMobile ? "_self" : "_blank";
+  hmEmail.rel = "noopener noreferrer";
+}
 
     // WhatsApp button (pre-filled)
     if (hmWhatsApp) {
