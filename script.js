@@ -108,7 +108,7 @@
       "Optimized backend with caching and efficient MongoDB queries",
       "Secure API design for payments, user data, and content management",
     ],
-    github: "https://github.com/YOUR_USERNAME/YOUR_REPO",
+    github: "https://github.com/prashantrajawat28",
     live: "https://studynotion-frontend-iota-three.vercel.app/",
     images: [
       "assets/project-1.png",
@@ -132,7 +132,7 @@
       "Lightweight UI using HTML & CSS",
       "Modular, clean folder structure for scalability",
     ],
-    github: "https://github.com/YOUR_USERNAME/YOUR_REPO",
+    github: "https://github.com/prashantrajawat28",
     live: "https://express-crud-hj5j.onrender.com/posts",
     images: [
       "assets/project-2.png",
